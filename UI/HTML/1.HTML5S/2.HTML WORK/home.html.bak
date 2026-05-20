@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+
+  <header>
+  <center><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY-JjIbIBk5mfCfDi0kcUDfufGQMXZnSYqfA&s" width="100" height="100" border="0" alt=""></center>
+	<center>
+	<a href="home.html">Home</a>
+		<a href="destinations.html">Destinations</a>
+			<a href="travelblog.html">Travelblog</a>
+				<a href="contactus.html">contactus</a>
+				<a href="registration.html">Registration</a>
+	</center>
+	<hr>
+
+
+  </header>
+ </head>
+ <body>
+  <center><img src="https://images.vexels.com/media/users/3/75559/raw/6cdf2fa78767861c361ab40422da130f-2016-travel-destination-list-template.jpg" width="500" height="300" border="0" alt="A Beautiful Trave Destination"></center>
+
+  <center><h2>Explore The World</h2></center>
+
+  <center><h3>Welcome To The Ultimate Travel Experience</h3></center>
+
+
+  <center><h4>popular travel destinations</h4></center>
+
+  <center><ul>
+	<li>New Zealand</li>
+	<li>Paris</li>
+	<li>Bali</li>
+  </ul></center>
+ </body>
+
+<hr>
+ <footer> 
+ <center>&copy;All Rights Reserved Borcelle Adventures
+</center> </footer>
+</html>
