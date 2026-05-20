@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav{
+            background-color: black;
+            display: flex;
+            justify-content: space-around;
+            /* height: 20px; */
+            padding:20px;
+        }
+        a{
+            color: aliceblue;
+                        text-decoration: none;
+        }
+        @media(max-width:600px){
+            nav{
+                background-color: black;
+                display: flex;
+                flex-direction: column;
+            }
+            a{
+                padding: 20px;
+                border: 2px solid white;
+            }
+        }
+    </style>
+</head>
+<body>
+   <nav>
+    <a href="">home</a>
+        <a href="">about</a>
+            <a href="">contact</a>
+   </nav> 
+</body>
+</html>

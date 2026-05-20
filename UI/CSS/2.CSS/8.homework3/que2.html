@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('data:image/jpeg;base64,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');
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            background-color: rgba(255,255,255,0.9);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
+            width: 350px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        h1 {
+            text-align: center;
+            font-weight: bold;
+            font-size: 28px;
+            margin-bottom: 20px;
+            text-decoration: underline;
+        }
+
+        label {
+            margin-top: 10px;
+            margin-bottom: 5px;
+            font-weight: 500;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+
+        input, select, button {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #000;
+            border-radius: 8px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        table:hover {
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+
+    <form action="que1.html" method="get">
+        <h1>Student Registration</h1>
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" name="fullname" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="confirm_password">Confirm Password</label>
+        <input type="password" id="confirm_password" name="confirm_password" required>
+
+        <label for="age">Age</label>
+        <input type="number" id="age" name="age" min="10" max="100" required>
+
+        <label for="course">Course</label>
+        <select id="course" name="course" required>
+            <option value="">Select Course</option>
+            <option value="Mathematics">Mathematics</option>
+            <option value="Physics">Physics</option>
+            <option value="Chemistry">Chemistry</option>
+            <option value="Biology">Biology</option>
+            <option value="Computer Science">Computer Science</option>
+        </select>
+
+        <button type="submit">Register</button>
+    </form>
+
+</body>
+</html>

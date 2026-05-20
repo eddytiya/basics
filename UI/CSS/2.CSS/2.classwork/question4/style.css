@@ -1,0 +1,17 @@
+body{
+    background-color: black;
+}
+
+p{
+    font-size: x-large;
+    font-style: italic;
+    color: red;
+    background-color: aqua;
+    text-decoration: underline dotted;
+    text-transform: capitalize;
+}
+
+h1{
+    background-color: aliceblue;
+      font-family: "Libertinus Keyboard", system-ui;
+}

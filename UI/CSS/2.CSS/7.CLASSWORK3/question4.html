@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Properties Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        h2 {
+            margin-top: 40px;
+            color: #333;
+        }
+
+        /* Common styling for flex containers */
+        .flex-container {
+            display: flex;
+            margin: 20px 0;
+            padding: 10px;
+            border: 2px dashed #333;
+            min-height: 100px;
+        }
+
+        /* Flex items styling */
+        .flex-container div {
+            padding: 20px;
+            color: white;
+            text-align: center;
+            margin: 5px;
+            font-weight: bold;
+        }
+
+        .item1 { background-color: #e74c3c; }
+        .item2 { background-color: #3498db; }
+        .item3 { background-color: #2ecc71; }
+        .item4 { background-color: #f1c40f; }
+        .item5 { background-color: #9b59b6; }
+
+        /* Section labels */
+        .section-label {
+            font-size: 14px;
+            font-style: italic;
+            color: #555;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Flexbox Properties Demonstration</h1>
+
+    <!-- Flex Direction -->
+    <h2>flex-direction</h2>
+    <div class="section-label">column</div>
+    <div class="flex-container" style="flex-direction: column;">
+        <div class="item1">Item 1</div>
+        <div class="item2">Item 2</div>
+        <div class="item3">Item 3</div>
+        <div class="item4">Item 4</div>
+        <div class="item5">Item 5</div>
+    </div>
+
+    <div class="section-label">column-reverse</div>
+    <div class="flex-container" style="flex-direction: column-reverse;">
+        <div class="item1">Item 1</div>
+        <div class="item2">Item 2</div>
+        <div class="item3">Item 3</div>
+        <div class="item4">Item 4</div>
+        <div class="item5">Item 5</div>
+    </div>
+
+    <div class="section-label">row</div>
+    <div class="flex-container" style="flex-direction: row;">
+        <div class="item1">Item 1</div>
+        <div class="item2">Item 2</div>
+        <div class="item3">Item 3</div>
+        <div class="item4">Item 4</div>
+        <div class="item5">Item 5</div>
+    </div>
+
+    <div class="section-label">row-reverse</div>
+    <div class="flex-container" style="flex-direction: row-reverse;">
+        <div class="item1">Item 1</div>
+        <div class="item2">Item 2</div>
+        <div class="item3">Item 3</div>
+        <div class="item4">Item 4</div>
+        <div class="item5">Item 5</div>
+    </div>
+
+    <!-- Flex Wrap -->
+    <h2>flex-wrap</h2>
+    <div class="section-label">wrap</div>
+    <div class="flex-container" style="flex-wrap: wrap; width: 400px;">
+        <div class="item1">Item 1</div>
+        <div class="item2">Item 2</div>
+        <div class="item3">Item 3</div>
+        <div class="item4">Item 4</div>
+        <div class="item5">Item 5</div>
+    </div>
+
+    <div class="section-label">wrap-reverse</div>
+    <div class="flex-container" style="flex-wrap: wrap-reverse; width: 400px;">
+        <div class="item1">Item 1</div>
+        <div class="item2">Item 2</div>
+        <div class="item3">Item 3</div>
+        <div class="item4">Item 4</div>
+        <div class="item5">Item 5</div>
+    </div>
+
+    <div class="section-label">nowrap</div>
+    <div class="flex-container" style="flex-wrap: nowrap; width: 400px;">
+        <div class="item1">Item 1</div>
+        <div class="item2">Item 2</div>
+        <div class="item3">Item 3</div>
+        <div class="item4">Item 4</div>
+        <div class="item5">Item 5</div>
+    </div>
+
+    <!-- Justify Content -->
+    <h2>justify-content</h2>
+    <div class="section-label">center</div>
+    <div class="flex-container" style="justify-content: center;">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+    </div>
+
+    <div class="section-label">space-between</div>
+    <div class="flex-container" style="justify-content: space-between;">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+    </div>
+
+    <div class="section-label">space-around</div>
+    <div class="flex-container" style="justify-content: space-around;">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+    </div>
+
+    <!-- Align Items -->
+    <h2>align-items</h2>
+    <div class="section-label">flex-start</div>
+    <div class="flex-container" style="align-items: flex-start; height: 150px;">
+        <div class="item1">A</div>
+        <div class="item2">B</div>
+        <div class="item3">C</div>
+        <div class="item4">D</div>
+        <div class="item5">E</div>
+    </div>
+
+    <div class="section-label">center</div>
+    <div class="flex-container" style="align-items: center; height: 150px;">
+        <div class="item1">A</div>
+        <div class="item2">B</div>
+        <div class="item3">C</div>
+        <div class="item4">D</div>
+        <div class="item5">E</div>
+    </div>
+
+    <div class="section-label">stretch</div>
+    <div class="flex-container" style="align-items: stretch; height: 150px;">
+        <div class="item1">A</div>
+        <div class="item2">B</div>
+        <div class="item3">C</div>
+        <div class="item4">D</div>
+        <div class="item5">E</div>
+    </div>
+
+    <!-- Order property -->
+    <h2>order</h2>
+    <div class="flex-container">
+        <div class="item1" style="order: 5;">1</div>
+        <div class="item2" style="order: 3;">2</div>
+        <div class="item3" style="order: 1;">3</div>
+        <div class="item4" style="order: 4;">4</div>
+        <div class="item5" style="order: 2;">5</div>
+    </div>
+
+    <!-- Flex-grow -->
+    <h2>flex-grow</h2>
+    <div class="flex-container" style="width: 600px;">
+        <div class="item1" style="flex-grow: 1;">1</div>
+        <div class="item2" style="flex-grow: 2;">2</div>
+        <div class="item3" style="flex-grow: 3;">3</div>
+        <div class="item4" style="flex-grow: 1;">4</div>
+        <div class="item5" style="flex-grow: 2;">5</div>
+    </div>
+
+    <!-- Flex-shrink -->
+    <h2>flex-shrink</h2>
+    <div class="flex-container" style="width: 400px;">
+        <div class="item1" style="flex-shrink: 1;">1</div>
+        <div class="item2" style="flex-shrink: 2;">2</div>
+        <div class="item3" style="flex-shrink: 3;">3</div>
+        <div class="item4" style="flex-shrink: 1;">4</div>
+        <div class="item5" style="flex-shrink: 2;">5</div>
+    </div>
+
+</body>
+</html>

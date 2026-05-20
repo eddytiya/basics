@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    nav {
+      background-color: black;
+      padding: 20px;
+      display: flex;
+      justify-content: space-around;
+    }
+    a {
+      color: white;
+      text-decoration: none;
+    }
+
+    /* main content side by side */
+    .main {
+      display: flex;
+      flex-direction: row;
+      margin-top: 20px;
+      gap: 10px; /* space between boxes */
+      flex-wrap: wrap; /* allow wrapping on smaller screens */
+    }
+
+    /* style for each content box */
+    .main .one {
+      flex: 1; /* shrink/grow equally */
+      min-width: 150px; /* don't shrink below this */
+      padding: 40px;
+      text-align: center;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    /* optional: stack nav links on small screens */
+    @media(max-width:600px){
+      nav {
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+      }
+      a {
+        padding: 10px;
+        border: 1px solid white;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="">home</a>
+    <a href="">about</a>
+    <a href="">contact</a>
+  </nav>
+
+  <div class="main">
+    <div class="one ek" style="background-color: palegoldenrod;">one</div>
+    <div class="one do" style="background-color: paleturquoise;">weo</div> 
+    <div class="one teen" style="background-color: palegreen;">hteer</div>                           
+  </div>
+</body>
+</html>

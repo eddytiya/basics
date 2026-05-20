@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            margin-top: 200px;
+            margin-left: 50%;
+        }
+        table{
+            margin-left: 45%;
+            border: 5px  solid palevioletred;
+            border-collapse:  separate;
+           
+        }
+        
+        th{
+            font-family: fantasy;
+            font-weight: lighter;
+            font-size: x-large;
+            text-decoration: underline dashed;
+            text-transform: uppercase;
+            padding: 5px;
+            border: 2px groove red;
+        }
+        td{
+            padding: 5px;
+            font-family: cursive;
+            font-size: large;
+            border: 2px groove red;
+        }
+        tr:nth-child(even) td{
+            border-radius: 50px;
+        }
+        
+        tr:nth-child(even){
+            background-color: aqua; 
+        }
+        tr:hover td{
+            font-style: initial;
+            text-decoration: underline solid;
+        }
+        tr:hover th{
+            font-style: initial;
+            text-decoration: underline solid;
+        
+        }
+        table:hover{
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Student Details</h1>
+    <table>
+        
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Course</th>
+            <th>Grade</th>
+        </tr>
+        <tr>
+            <td>Tom</td>
+            <td>20</td>
+            <td>B.Sc. IT</td>
+            <td>A</td>
+        </tr>
+        <tr>
+            <td>Priya</td>
+            <td>21</td>
+            <td>B.Com</td>
+            <td>B+</td>
+        </tr>
+        <tr>
+            <td>Ankit</td>
+            <td>19</td>
+            <td>B.A. English</td>
+            <td>B</td>
+        </tr>
+        <tr>
+            <td>Rohan</td>
+            <td>22</td>
+            <td>B.Sc. Physics</td>
+            <td>A+</td>
+        </tr>
+        <tr>
+            <td>Arjun</td>
+            <td>18</td>
+            <td>BBA</td>
+            <td>C</td>
+        </tr>
+    </table>
+</body>
+</html>

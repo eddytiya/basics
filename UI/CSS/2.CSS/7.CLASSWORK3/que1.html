@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details</title>
+    <style>
+        /* 6. Background image covering the entire screen */
+        body{
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: cursive;  /* 3. Font family */
+            font-weight: 100;      /* 3. Font weight */
+            background-image: url('https://imgs.search.brave.com/Hq4tR3GBYuEK0p4v6xeIt2wL2b3A8D1LAIXzs73jwwI/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93MC5w/ZWFrcHguY29tL3dh/bGxwYXBlci8yMi8x/MTQvSEQtd2FsbHBh/cGVyLXByZW1pZXIt/bGVhZ3VlLWZvb3Ri/YWxsLWVuZ2xhbmQt/bG9nby1wcmVtaWVy/LWxlYWd1ZS1lbWJs/ZW0tYmx1ZS1zaWxr/LXRleHR1cmUtdGh1/bWJuYWlsLmpwZw');
+            background-repeat: no-repeat;
+            background-size: cover;    
+        }
+
+        /* 9. Heading formatting */
+        h1{
+            text-align: center;
+            margin-top: 30px;
+            font-family: 'Georgia', serif;  /* 3. Font family */
+            font-weight: bold;               /* 3. Font weight */
+            font-size: 36px;                 /* 3. Font size */
+            color: #fff;
+            text-shadow: 1px 1px 2px #000;
+        }
+
+        /* 2. Table margin, padding, font styling */
+        table{
+            width: 80%;
+            margin: 50px auto;          /* 2. Margin */
+            padding: 10px;              /* 2. Padding */
+            border-collapse: collapse;  /* 5. Border collapse */
+            background-color: rgba(255,255,255,0.8);
+            font-family: Verdana, Geneva, Tahoma, sans-serif; /* 3. Font family */
+            font-size: 16px;            /* 3. Font size */
+            font-weight: 500;           /* 3. Font weight */
+            border-radius: 12px; 
+        }
+
+        /* 4. Table header styling */
+        th{
+            padding: 12px 20px;         /* 2. Padding */
+            border: 1px solid black;    /* 5. Borders */
+            text-decoration: underline; /* 4. Text decoration */
+            text-transform: uppercase;  /* 4. Text transform */
+            font-style: italic;         /* 3. Font style */
+            background-color: bisque;
+            border-radius: 12px;        /* optional for aesthetics */
+        }
+
+        /* 2. Table cell styling */
+        td{
+            padding: 10px 15px;         /* 2. Padding */
+            border: 1px solid black;    /* 5. Borders */
+            text-align: center;
+        }
+
+        /* 6. Rounded borders for even-numbered rows */
+        tr:nth-child(even) td{
+            border-radius: 10px;        /* 6. Pseudo-selector for td */
+        }
+
+        /* 7. Alternate row colors */
+        tr:nth-child(odd){
+            background-color: aqua;     /* 7. nth-child odd */
+        }
+
+        tr:nth-child(even){
+            background-color: aquamarine; /* 7. nth-child even */
+        }
+
+        /* 9. Hover effect for rows */
+        tr:hover td{
+            font-style: italic;              /* 9. Change font style */
+            text-decoration: overline underline; /* 9. Text-decoration */
+            cursor: pointer;                 /* makes hover clear */
+        }
+
+        /* Optional: Add hover effect for heading to fully satisfy 9 */
+        h1:hover {
+            text-decoration: underline wavy; 
+            font-style: italic;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- 1. Heading -->
+    <h1>Employee Details</h1>
+
+    <!-- 1. Table with required columns -->
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>       <!-- 4. Header formatting -->
+                <th>Age</th>
+                <th>Department</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Aditya Pathak</td>
+                <td>21</td>
+                <td>IT</td>
+                <td>$5000</td>
+            </tr>
+            <tr>
+                <td>Riya Sharma</td>
+                <td>25</td>
+                <td>HR</td>
+                <td>$4500</td>
+            </tr>
+            <tr>
+                <td>Vikram Singh</td>
+                <td>30</td>
+                <td>Finance</td>
+                <td>$6000</td>
+            </tr>
+            <tr>
+                <td>Anjali Mehta</td>
+                <td>28</td>
+                <td>Marketing</td>
+                <td>$4800</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>

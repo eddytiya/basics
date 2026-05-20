@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design Example</title>
+    <style>
+        .responsive-text {
+            font-size: 16px;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f0f0f0;
+            margin: 20px 0;
+        }
+
+        @media (min-width: 769px) {
+            .responsive-text {
+                font-family: fantasy;
+                font-size: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .responsive-text {
+                font-family: cursive;
+                font-size: 12px;
+            }
+        }
+
+        .container {
+            display: flex;
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .column {
+            flex: 1;
+            padding: 20px;
+            background-color: #d1e7dd;
+            text-align: center;
+            border: 1px solid #0f5132;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="responsive-text">
+        This text changes size based on the screen width. Resize your browser to see the effect.
+    </div>
+
+    <div class="container">
+        <div class="column">Column 1</div>
+        <div class="column">Column 2</div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Ensures the video fills the section */
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;           
+        }
+
+        body{
+            margin: 0;
+        }
+        h1 {
+            color: red;
+            margin: 0;
+            
+        }
+        .relative {
+            width: 100%;               /* CHANGED for full viewport width */
+            height: 100vh;              /* CHANGED for full viewport height */
+            position: relative;         
+            
+        }
+        .absolute {
+            position: absolute;
+        }
+
+        .absolute h1 {
+
+            top: 50%;
+            left: 50%;
+            color: red;
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <section class="relative">
+        <video class="absolute"
+            src="stock-footage-barcelona-spain-may-fc-barcelona-aerial-drone-footage-of-the-football-stadium-view-of.webm"
+            autoplay loop muted></video>
+        <section class="absolute">
+            <h1>the SPOTIFY CAMP NOU</h1>
+        </section>
+    </section>
+</body>
+</html>
