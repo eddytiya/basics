@@ -1,0 +1,37 @@
+<!-- Demonstrate how to create a new <li> element, set its text content, and append it
+to an existing <ul> element on a web page using JavaScript. Add functionality to
+store the text content of the new <li> element in local storage. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="" id="data">
+    <button id="b1">add</button>
+    <ul id="ul">
+        <li>java</li>
+        <li>python</li>
+        <li>php</li>
+    </ul>  
+</body>
+
+<script>
+    const b1=document.getElementById("b1");
+    b1.addEventListener("click",()=>{
+        const data = document.getElementById("data").value
+
+        const ul=document.getElementById("ul")
+        const li=document.createElement("li")
+
+        li.textContent=data
+        ul.appendChild(li)
+
+        localStorage.setItem("newLI",data)
+    })
+</script>
+</html>
