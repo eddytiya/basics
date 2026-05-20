@@ -1,0 +1,38 @@
+<!-- Create a "resetCart" button to clear the cart count from local storage. -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p><span id="count">0</span></p>
+
+    <button onclick="inc()">increment</button>
+    <button onclick="dec()">decrement</button>
+    <button onclick="clear_cart()">reset</button>
+    
+</body>
+
+<script>
+    let count =0;
+
+    function inc(){
+        document.getElementById("count").innerHTML=count++;
+        localStorage.setItem("count",count);
+    }
+    function dec(){
+        document.getElementById("count").innerHTML=count--;
+        localStorage.setItem("count",count);
+    }
+    function clear_cart(){
+        document.getElementById("count").innerHTML=count=0;
+        localStorage.setItem("count",count);
+    }
+
+</script>
+</html>

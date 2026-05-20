@@ -1,0 +1,75 @@
+<!-- Create an order form with fields for customer name, product, and address.
+Implement JavaScript validation to ensure:
+a. Customer Name: Is not empty and contains only alphabetic characters.
+b. Product: Matches one of the available products.
+c. Address: Is not empty.
+d. Store each order (customer name, product, address) in local storage after
+validation. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="return validate()">
+    <p><span>name:</span>
+        <input type="text" id="name"></p>
+
+    <p><span>Product:</span>
+        <input type="text" id="product"></p>
+
+    <p><span>address</span>
+    <input type="text" id="address"></p>
+
+    <button id="b1">submit</button>
+    </form>
+</body>
+
+<script>
+function validate(){
+    let name=document.getElementById("name").value.trim();
+    let product=document.getElementById("product").value.trim();
+    let address=document.getElementById("address").value.trim();
+
+    //regex
+    let nameregex=/^[A-Za-z]+$/;
+    let emailregex=/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    let passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$/;
+
+
+    if(name===""){
+        alert("name cannot be empty");
+        return false;
+    }
+    if(!nameregex.test(name)){
+        alert("name must contain only alpabets format");
+        return false;
+    }
+
+    let available=["apple","banana","strawberry"];
+
+    if(!available.includes(product)){
+        alert("item not available");
+        return false;
+    }
+
+
+    if(address===""){
+        alert("address field cannot be left empty");
+        return false
+    }
+
+    localStorage.setItem("name",name);
+    localStorage.setItem("product",product);
+    localStorage.setItem("address",address);
+alert("successful")
+    return true;
+
+    
+}
+</script>
+</html>

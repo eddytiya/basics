@@ -1,0 +1,77 @@
+<!-- Create a form with fields for name, email, and password. Using JavaScript,
+implement client-side validation for the following criteria:
+a. Name: Should contain only alphabetic characters.
+b. Email: Should match a valid email format.
+c. Password: Should have a minimum length of 8 characters, including at least
+one uppercase letter, one lowercase letter, and one digit.
+d. After validating the form, store the name and email in local storage -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="return validation()">
+        <p><span>name:</span>
+        <input type="text" id="name"></p>
+
+        <P><SPAN>EMAIL:</SPAN>
+        <input type="text" name="" id="email"></P>
+
+        <p><span>password</span>
+        <input type="password" id="password"></p>
+
+
+        <button id="b1">submit</button>
+
+
+    </form>
+</body>
+
+
+<script>
+
+    function validation(){
+    let name=document.getElementById("name").value.trim();
+    let email=document.getElementById("email").value.trim();
+    let password=document.getElementById("password").value.trim();
+
+
+    //regex
+        let nameregex=/^[A-Za-z]+$/;
+        let emailregex=/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        let passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$/;
+
+
+    if(name===""){
+        alert("fields cannot remain empty");
+        return false;
+    }
+    if(!nameregex.test(name)){
+        alert("invalid format");
+        return false
+    }
+
+    if(!emailregex.test(email)){
+        alert("invalid email format")
+        return false;
+    }
+    if(password.length<8){
+        alert("the length of the password cannot be less than 8")
+    }
+    if(!passwordRegex.test(password)){
+        alert("invalid password should have one upper ,one lower and a special character")
+    }
+    localStorage.setItem("name",name)
+    localStorage.setItem("email",email);
+
+    return true;
+
+}
+</script>
+</html>

@@ -1,0 +1,64 @@
+<!-- Create a product form with fields for product name, price, and quantity. Use
+JavaScript for client-side validation:
+a. Product Name: Should not be empty.
+b. Price: Should be a positive number.
+c. Quantity: Should be a numeric value greater than 0.
+d. Store the product’s details in local storage upon successful validation. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="return validation()">
+        <p><span>name</span>
+        <span><input type="text" name="" id="name"></span></p>
+        <p><span>price</span>
+        <span><input type="text" name="" id="price"></span></p>
+        <p><span>quantity</span>
+        <span><input type="text" name="" id="quantity"></span></p>
+
+        <button id="b1">submit</button>
+        
+    </form>
+</body>
+
+<script>
+
+    function validation(){
+
+    
+    let name=document.getElementById("name").value.trim()
+    let price=Number(document.getElementById("price").value)
+    let quantity = Number(document.getElementById("quantity").value)
+
+
+    if(name===""){
+        alert("name cannot be empty");
+        return false;
+    }
+
+    if(price>0 || isNaN(price)){
+alert("should be a number and not null")
+return false;
+    }
+
+    if(quantity>0 ||isNaN(quantity)){
+        alert("should be a positive and valid numberic character");
+        return false;
+    }
+
+
+    localStorage.setItem("name",name);
+    localStorage.setItem("price",price);
+    localStorage.setItem("quantity",quantity);
+    alert("successful");
+    return true;
+    }
+
+</script>
+</html>

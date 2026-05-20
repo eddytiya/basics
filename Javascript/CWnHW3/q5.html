@@ -1,0 +1,81 @@
+<!-- Create a contact form with fields for name, email, and query. Implement JavaScript
+validation to ensure:
+a. Name: Is not empty and contains only alphabetic characters.
+b. Email: Matches a valid email format.
+c. Query: Is not empty and less than 1000 characters.
+d. After validation, store the name, email, and query in local storage -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <form onsubmit="return validateForm()">
+
+        <p>Name:
+        <input type="text" id="name"></p>
+
+        <p>Email:
+        <input type="text" id="email"></p>
+
+        <p>Query:
+        <textarea id="query" rows="4" cols="30"></textarea></p>
+
+        <button type="submit">Submit</button>
+
+    </form>
+</body>
+
+<script>
+    function validateForm() {
+
+    let name = document.getElementById("name").value.trim();
+    let email = document.getElementById("email").value.trim();
+    let query = document.getElementById("query").value.trim();
+
+    let nameRegex = /^[A-Za-z ]+$/;
+    let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+
+    // Name validation
+    if (name === "") {
+        alert("Name cannot be empty");
+        return false;
+    }
+    if (!nameRegex.test(name)) {
+        alert("Name must contain only alphabetic characters");
+        return false;
+    }
+
+    // Email validation
+    if (!emailRegex.test(email)) {
+        alert("Invalid email format");
+        return false;
+    }
+
+    // Query validation
+    if (query === "") {
+        alert("Query cannot be empty");
+        return false;
+    }
+    if (query.length > 1000) {
+        alert("Query must be less than 1000 characters");
+        return false;
+    }
+
+    // Store in localStorage
+    localStorage.setItem("name", name);
+    localStorage.setItem("email", email);
+    localStorage.setItem("query", query);
+
+    alert("Form validated and data stored in localStorage!");
+    return true;
+
+    }
+</script>
+</html>
