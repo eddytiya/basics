@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Home</title>
+   <center><img src="C:/Users/adity/OneDrive/Desktop/photos/MG logo.png" width="259" height="194" border="0" alt=""></center> 
+   <center><nav>
+   <a href="Home.html">Home</a> | 
+        <a href="about.html">About Us</a> | 
+        <a href="contact.html">Contact</a> | 
+        <a href="register.html">Register</a>
+   </nav></center>
+ </head>
+ <body>
+ <H2>Company Details</H2>
+ <center><table border="1">
+ <tr>
+	<td>Name</td>
+	<td>Morris Garages</td>
+ </tr>
+ <tr>
+	<td>Phone</td>
+	<td>8591451308</td>
+ </tr>
+ <tr>
+	<td>Address</td>
+	<td>SO-BO</td>
+ </tr>
+ </table></center>
+
+<center><H2>Query form</H2></center>
+
+<center><form method="post" action="mailto:adityapathak987@gmail.com">
+	<table border = "0.3">
+<tr>
+	<td>Name:</td>
+	<td><input type="text" name=""></td>
+</tr>
+<tr>
+	<td>phone number:</td>
+	<td><input type="text" name=""></td>
+</tr>
+<tr>
+	<td>query:</td>
+	<td><textarea name="" rows="" cols=""></textarea></td>
+</tr>
+<tr>
+	<td><input type="submit"></td>
+	<td></td>
+</tr>
+</table>
+</form></center>
+<center>
+<iframe src="www.example.com" width="600" 
+    height="450" 
+    allowfullscreen>></iframe>
+</center>
+
+
+
+
+ </body>
+
+ <footer>
+ <p>&copy; 2025 Morris Garages</p>
+ </footer>
+</html>

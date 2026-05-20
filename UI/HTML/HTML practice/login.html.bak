@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  <center><H2>Login<H2></center>
+  <form method="post" action="home">
+	<table>
+  <tr>
+	<td>username</td>
+	<td><input type="text" name=""></td>
+  </tr>
+  <tr>
+	<td>password</td>
+	<td><input type="password" name=""></td>
+  </tr>
+  <tr>
+	<td><input type="submit"></td>
+	<td></td>
+  </tr>
+  </table>
+  </form>
+ </body>
+</html>

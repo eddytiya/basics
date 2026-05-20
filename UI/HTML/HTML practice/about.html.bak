@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Home</title>
+   <center><img src="C:/Users/adity/OneDrive/Desktop/photos/MG logo.png" width="259" height="194" border="0" alt=""></center> 
+   <center><nav>
+   <a href="Home.html">Home</a> | 
+        <a href="about.html">About Us</a> | 
+        <a href="contact.html">Contact</a> | 
+        <a href="register.html">Register</a>
+   </nav></center>
+ </head>
+ <body>
+
+<center><img src="../download/WhatsApp Image 2025-03-06 at 12.51.33 AM.jpeg" width="275" height="183" border="0" alt="branding"></center>
+
+<center><pre>
+ we are committed to providing high-quality vehicles with exceptional customer service. 
+ We offer a wide range of new, pre-owned, and certified used cars to suit every need and budget.
+ Our team ensures a hassle-free buying experience with competitive pricing and financing options. 
+ Visit us today and drive home your dream car!
+</pre>
+</center>
+<video width="640" height="360" controls>
+    <source src="video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+
+ </body>
+
+ <footer>
+ <center><p>&copy; 2025 Morris Garages</p></center>
+ </footer>
+</html>

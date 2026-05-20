@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url("https://images.pexels.com/photos/347140/pexels-photo-347140.jpeg?cs=srgb&dl=pexels-tirachard-kumtanom-112571-347140.jpg&fm=jpg");
+        }
+
+        table {
+            margin-left: 45%;
+            margin-top: 25%;
+            border-collapse: collapse; /* Ensures lines are clean and sharp */
+            border: 2px solid black;
+            
+        }
+
+        td {
+            padding: 20px;
+            border-bottom: 2px solid #4CAF50; /* Adds horizontal lines */
+            
+        }
+
+
+        tr:last-child td {
+            border-bottom: none; /* Removes the bottom border from the last row */
+        }
+        tr:nth-child(odd) {
+            background-color:greenyellow;  /* Light grey for odd rows */
+        }
+
+        tr:nth-child(even) {
+            background-color: green;  /* White for even rows */
+        }
+
+
+
+        tr:hover {
+            background-color:#81c784; /* Highlight rows on hover */
+            cursor: pointer;
+
+            
+        }
+        td:hover{
+            transform: scale(1.5);
+
+        }
+
+        
+    </style>
+
+
+
+</head>
+<body>
+    <div>
+        <table>
+            <tr>
+            <td>sr.no</td>
+            <td>name</td>
+            <td>surname</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Aditya</td>
+            <td>Pathak</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Nitisha</td>
+            <td>Deshpande</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Virat</td>
+            <td>Kohli</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Anushka</td>
+            <td>Sharma</td>
+        </tr>
+        </table>
+    </div>
+</body>
+</html>
